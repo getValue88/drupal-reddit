@@ -12,7 +12,12 @@
 /web/sites/*/settings.local.php
 
 # Ignore Drupal's file directory
-/web/sites/*/files/
+# /web/sites/*/files/
+/web/sites/*/files/css/
+/web/sites/*/files/js/
+/web/sites/*/files/php/
+/web/sites/*/files/styles/
+
 
 # Ignore SimpleTest multi-site environment.
 /web/sites/simpletest
