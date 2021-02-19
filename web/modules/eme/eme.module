@@ -1,0 +1,50 @@
+<?php
+
+/**
+ * @file
+ * Contains eme.module.
+ */
+
+use Drupal\Core\Archiver\ArchiveTar;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\StreamWrapper\StreamWrapperManager;
+use Drupal\eme\Eme;
+
+/**
+ * Implements hook_help().
+ */
+function eme_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the eme module.
+    case 'help.page.eme':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Exports content entities into a scenario module') . '</p>';
+      return $output;
+  }
+}
+
+/**
+ * Implements hook_file_download().
+ */
+function eme_file_download($uri) {
+  $scheme = StreamWrapperManager::getScheme($uri);
+  $target = StreamWrapperManager::getTarget($uri);
+  if ($scheme == 'temporary' && $target == Eme::ARCHIVE_NAME) {
+    $archive = new ArchiveTar($uri);
+    $module_name = array_reduce($archive->listContent(), function ($carry, array $file) {
+      $basename = basename($file['filename'], '.module');
+      if ($file['filename'] === $basename . '.module') {
+        $carry = $basename;
+      }
+      return $carry;
+    }, NULL);
+
+    if (\Drupal::currentUser()->hasPermission('export content')) {
+      return [
+        'Content-disposition' => 'attachment; filename="' . $module_name . '.tar.gz"',
+      ];
+    }
+    return -1;
+  }
+}

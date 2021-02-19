@@ -1,5 +1,7 @@
 {
-    "require": {
-        "drush/drush": "^10.4"
-    }
+  "name": "some/name",
+  "description": "Some description will be useful too!",
+  "require": {
+    "drush/drush": "^10.4"
+  }
 }

@@ -1,0 +1,21 @@
+[
+    {
+        "tid": 5,
+        "uuid": "6244460b-dc50-4daa-9512-6b58eaa164a9",
+        "revision_id": 5,
+        "langcode": "en",
+        "vid": "articles",
+        "revision_created": "1613695583",
+        "revision_user": null,
+        "revision_log_message": null,
+        "status": "1",
+        "name": "Node.js",
+        "description": null,
+        "weight": 0,
+        "parent": 0,
+        "changed": "1613695583",
+        "default_langcode": "1",
+        "revision_default": "1",
+        "revision_translation_affected": "1"
+    }
+]

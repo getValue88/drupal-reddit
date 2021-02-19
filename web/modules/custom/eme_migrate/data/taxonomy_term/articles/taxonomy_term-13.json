@@ -1,0 +1,21 @@
+[
+    {
+        "tid": 13,
+        "uuid": "4c2edd43-6f23-4387-b224-27876d2029ac",
+        "revision_id": 13,
+        "langcode": "en",
+        "vid": "articles",
+        "revision_created": "1613696094",
+        "revision_user": null,
+        "revision_log_message": null,
+        "status": "1",
+        "name": "Java",
+        "description": null,
+        "weight": 0,
+        "parent": 0,
+        "changed": "1613696094",
+        "default_langcode": "1",
+        "revision_default": "1",
+        "revision_translation_affected": "1"
+    }
+]

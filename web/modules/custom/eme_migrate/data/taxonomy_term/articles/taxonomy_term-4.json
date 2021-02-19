@@ -1,0 +1,21 @@
+[
+    {
+        "tid": 4,
+        "uuid": "e392e66f-92b9-42bd-91f1-05e8e5036b38",
+        "revision_id": 4,
+        "langcode": "en",
+        "vid": "articles",
+        "revision_created": "1613695550",
+        "revision_user": null,
+        "revision_log_message": null,
+        "status": "1",
+        "name": "Angular",
+        "description": null,
+        "weight": 0,
+        "parent": 0,
+        "changed": "1613695550",
+        "default_langcode": "1",
+        "revision_default": "1",
+        "revision_translation_affected": "1"
+    }
+]

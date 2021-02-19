@@ -1,0 +1,32 @@
+{
+    "name": "drupal/eme",
+    "description": "Exports content entities into a migration module",
+    "type": "drupal-module",
+    "keywords": ["Drupal"],
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Zoltan Horvath",
+            "email": "z.a.horvath@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://www.drupal.org/project/eme",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/eme",
+        "source": "https://git.drupalcode.org/project/eme"
+    },
+    "require": {  },
+    "require-dev": {
+        "drupal/migrate_tools": "^5",
+        "drupal/migrate_plus": "^5",
+        "drush/drush": "^9 || ^10"
+    },
+    "extra": {
+        "drush": {
+            "services": {
+                "drush.services.yml":  "^9 || ^10"
+            }
+        }
+    }
+}

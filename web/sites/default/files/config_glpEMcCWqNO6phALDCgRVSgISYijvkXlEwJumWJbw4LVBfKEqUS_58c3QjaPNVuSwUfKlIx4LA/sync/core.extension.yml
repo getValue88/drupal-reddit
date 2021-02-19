@@ -15,6 +15,7 @@ module:
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
+  eme: 0
   field: 0
   field_ui: 0
   file: 0
@@ -26,6 +27,9 @@ module:
   link: 0
   menu_link_content: 0
   menu_ui: 0
+  migrate: 0
+  migrate_plus: 0
+  migrate_tools: 0
   node: 0
   options: 0
   page_cache: 0

@@ -1,0 +1,39 @@
+eme.eme_export_form:
+  path: '/admin/config/development/entity-export'
+  defaults:
+    _title: 'Export Content to Migration'
+    _form: '\Drupal\eme\Form\ExportForm'
+  requirements:
+    _permission: 'export content'
+
+eme.collection:
+  path: '/admin/config/development/entity-export/collection'
+  defaults:
+    _title: 'Export Collection'
+    _form: '\Drupal\eme\Form\Collection'
+  requirements:
+    _permission: 'export content'
+
+eme.settings:
+  path: '/admin/config/development/entity-export/settings'
+  defaults:
+    _title: 'Entity Export Settings'
+    _form: 'Drupal\eme\Form\EmeSettingsForm'
+  requirements:
+    _permission: 'manage content export settings'
+
+eme.eme_export_download:
+  path: '/admin/config/development/entity-export/download'
+  defaults:
+    _title: 'Download tarball'
+    _form: '\Drupal\eme\Form\DownloadForm'
+  requirements:
+    _permission: 'export content'
+
+eme.eme_export_download_file:
+  path: '/admin/config/development/entity-export/download-file'
+  defaults:
+    _controller: '\Drupal\eme\Controller\DownloadController::download'
+  requirements:
+    _permission: 'export content'
+    _export_exists: 'TRUE'

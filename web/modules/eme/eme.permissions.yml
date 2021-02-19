@@ -1,0 +1,9 @@
+export content:
+  title: Export content entities
+  description: 'Export content entities to a migration set.'
+  restrict access: TRUE
+
+manage content export settings:
+  title: Manage content export settings
+  description: 'Manage content export settings.'
+  restrict access: TRUE

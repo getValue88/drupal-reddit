@@ -1,0 +1,17 @@
+eme.eme_export_form:
+  title: 'Export Content to Migration'
+  description: Export available content
+  route_name: eme.eme_export_form
+  parent: system.admin_config_development
+
+eme.collection:
+  title: 'Collection'
+  route_name: eme.collection
+  parent: eme.eme_export_form
+
+eme.settings:
+  title: 'Settings'
+  description: Configure entity export settings
+  route_name: eme.settings
+  parent: eme.eme_export_form
+  weight: 100

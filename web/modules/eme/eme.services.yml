@@ -1,0 +1,20 @@
+services:
+  access_check.export_exists:
+    class: '\Drupal\eme\Access\DownloadAccessCheck'
+    tags:
+      - { name: access_check, applies_to: _export_exists }
+
+  access_check.temporary_scheme_configured:
+    class: '\Drupal\eme\Access\TemporarySchemeAccessCheck'
+    arguments: ['@stream_wrapper_manager']
+    tags:
+      - { name: access_check, applies_to: _temporary_stream_accessible}
+
+  eme.batch_runner:
+    class: '\Drupal\eme\InterfaceAwareExportBatchRunner'
+    arguments:
+      - '@entity_type.manager'
+      - '@entity_field.manager'
+      - '@file_system'
+      - '@extension.list.module'
+      - '@lock.persistent'

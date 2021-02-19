@@ -1,0 +1,41 @@
+eme.settings:
+  type: config_object
+  label: 'Entity Export settings'
+  mapping:
+
+    module_machine:
+      type: string
+      label: 'Module name'
+      nullable: true
+
+    module_human:
+      type: string
+      label: 'Module human name'
+      nullable: true
+
+    migration_prefix:
+      type: string
+      label: 'Migration prefix'
+      nullable: true
+
+    migration_group:
+      type: string
+      label: 'Migration group'
+      nullable: true
+
+    data_subdir:
+      type: string
+      label: 'Data subdirectory'
+      nullable: true
+
+    file_subdir:
+      type: string
+      label: 'File subdirectory'
+      nullable: true
+
+    ignored_entity_types:
+      type: sequence
+      label: 'Entity types to ignore'
+      sequence:
+        type: string
+        label: 'Ignored type'

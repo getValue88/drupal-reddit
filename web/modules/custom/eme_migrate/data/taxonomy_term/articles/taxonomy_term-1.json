@@ -1,0 +1,21 @@
+[
+    {
+        "tid": 1,
+        "uuid": "c6fca675-323b-4b62-96f7-12d5a845bf46",
+        "revision_id": 1,
+        "langcode": "en",
+        "vid": "articles",
+        "revision_created": "1613695391",
+        "revision_user": null,
+        "revision_log_message": null,
+        "status": "1",
+        "name": "TypeScript",
+        "description": null,
+        "weight": 0,
+        "parent": 0,
+        "changed": "1613695391",
+        "default_langcode": "1",
+        "revision_default": "1",
+        "revision_translation_affected": "1"
+    }
+]
