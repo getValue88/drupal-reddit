@@ -1,7 +1,7 @@
 <?php
 
 // @codingStandardsIgnoreFile
-
+$config['system.logging']['error_level'] = 'verbose';
 /**
  * @file
  * Drupal site-specific configuration file.
