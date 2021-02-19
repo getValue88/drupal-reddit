@@ -1,9 +1,0 @@
-services:
-  eme.commands:
-    class: \Drupal\eme\Commands\EmeCommands
-    tags:
-      - { name: drush.command }
-    arguments:
-      - '@entity_type.manager'
-      - '@extension.list.module'
-      - '@eme.batch_runner'

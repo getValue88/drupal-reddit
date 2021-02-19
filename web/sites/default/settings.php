@@ -790,3 +790,26 @@ $databases['default']['default'] = array (
   'driver' => 'mysql',
 );
 $settings['config_sync_directory'] = 'sites/default/files/config_glpEMcCWqNO6phALDCgRVSgISYijvkXlEwJumWJbw4LVBfKEqUS_58c3QjaPNVuSwUfKlIx4LA/sync';
+
+// Database entry for `drush migrate-upgrade --configure-only`
+$databases['upgrade']['default'] = array (
+  'database' => 'drupal9',
+  'username' => 'drupal9',
+  'password' => 'drupal9',
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+// Database entry for `drush migrate-import --all`
+$databases['migrate']['default'] = array (
+  'database' => 'drupal9',
+  'username' => 'drupal9',
+  'password' => 'drupal9',
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);

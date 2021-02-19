@@ -1,0 +1,15 @@
+name: Term CSV Export/Import
+type: module
+description: Import and Export Taxonomy terms as csv.
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: Taxonomy
+configure: term_csv_export_import.import
+dependencies:
+  - drupal:taxonomy
+  - drupal:system (>= 8.6)
+
+# Information added by Drupal.org packaging script on 2020-08-27
+version: '8.x-3.0-alpha2'
+project: 'term_csv_export_import'
+datestamp: 1598548695
