@@ -13,6 +13,7 @@
 
 # Ignore Drupal's file directory
 # /web/sites/*/files/
+/web/sites/*/files/[0-9][0-9][0-9][0-9]-[0-9][0-9]
 /web/sites/*/files/css/
 /web/sites/*/files/js/
 /web/sites/*/files/php/
