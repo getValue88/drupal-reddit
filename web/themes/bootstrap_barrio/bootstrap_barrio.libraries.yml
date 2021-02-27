@@ -179,6 +179,14 @@ roboto:
       fonts/roboto.css: {}
       //fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:700: {}
 
+sanchez_lato:
+  version: VERSION
+  css:
+    component:
+      fonts/sanchez_lato.css: {}
+      //fonts.googleapis.com/css2?family=Sanchez|Sanchez+Lato:
+        { type: external }
+
 alegreya_roboto:
   version: VERSION
   css:
@@ -235,13 +243,6 @@ medula_abel:
       fonts/medula_abel.css: {}
       //fonts.googleapis.com/css?family=Abel|Medula+One: {}
 
-fjalla_cantarell:
-  version: VERSION
-  css:
-    component:
-      fonts/fjalla_cantarell.css: {}
-      //fonts.googleapis.com/css?family=Fjalla+One|Cantarell:400,400italic,700italic,700: {}
-
 coustard_leckerli:
   version: VERSION
   css:
@@ -255,13 +256,6 @@ philosopher_muli:
     component:
       fonts/philosopher_muli.css: {}
       //fonts.googleapis.com/css?family=Philosopher|Muli:300: {}
-
-vollkorn_exo:
-  version: VERSION
-  css:
-    component:
-      fonts/vollkorn_exo.css: {}
-      //fonts.googleapis.com/css?family=Vollkorn:700italic,700|Exo:400,400italic: {}
 
 monserrat_lato:
   version: VERSION
@@ -379,7 +373,8 @@ bootswatch_flatly:
 bootswatch_journal:
   css:
     component:
-      //stackpath.bootstrapcdn.com/bootswatch/4.5.2/journal/bootstrap.min.css: {}
+      //stackpath.bootstrapcdn.com/bootswatch/4.5.2/journal/bootstrap.min.css:
+        {}
   dependencies:
     - bootstrap_barrio/bootstrap_js
 bootswatch_litera:
@@ -403,7 +398,8 @@ bootswatch_lux:
 bootswatch_materia:
   css:
     component:
-      //stackpath.bootstrapcdn.com/bootswatch/4.5.2/materia/bootstrap.min.css: {}
+      //stackpath.bootstrapcdn.com/bootswatch/4.5.2/materia/bootstrap.min.css:
+        {}
   dependencies:
     - bootstrap_barrio/bootstrap_js
 bootswatch_minty:
@@ -421,19 +417,22 @@ bootswatch_pulse:
 bootswatch_sandstone:
   css:
     component:
-      //stackpath.bootstrapcdn.com/bootswatch/4.5.2/sandstone/bootstrap.min.css: {}
+      //stackpath.bootstrapcdn.com/bootswatch/4.5.2/sandstone/bootstrap.min.css:
+        {}
   dependencies:
     - bootstrap_barrio/bootstrap_js
 bootswatch_simplex:
   css:
     component:
-      //stackpath.bootstrapcdn.com/bootswatch/4.5.2/simplex/bootstrap.min.css: {}
+      //stackpath.bootstrapcdn.com/bootswatch/4.5.2/simplex/bootstrap.min.css:
+        {}
   dependencies:
     - bootstrap_barrio/bootstrap_js
 bootswatch_sketchy:
   css:
     component:
-      //stackpath.bootstrapcdn.com/bootswatch/4.5.2/sketchy/bootstrap.min.css: {}
+      //stackpath.bootstrapcdn.com/bootswatch/4.5.2/sketchy/bootstrap.min.css:
+        {}
   dependencies:
     - bootstrap_barrio/bootstrap_js
 bootswatch_slate:
@@ -451,13 +450,15 @@ bootswatch_solar:
 bootswatch_spacelab:
   css:
     component:
-      //stackpath.bootstrapcdn.com/bootswatch/4.5.2/spacelab/bootstrap.min.css: {}
+      //stackpath.bootstrapcdn.com/bootswatch/4.5.2/spacelab/bootstrap.min.css:
+        {}
   dependencies:
     - bootstrap_barrio/bootstrap_js
 bootswatch_superhero:
   css:
     component:
-      //stackpath.bootstrapcdn.com/bootswatch/4.5.2/superhero/bootstrap.min.css: {}
+      //stackpath.bootstrapcdn.com/bootswatch/4.5.2/superhero/bootstrap.min.css:
+        {}
   dependencies:
     - bootstrap_barrio/bootstrap_js
 bootswatch_united:
