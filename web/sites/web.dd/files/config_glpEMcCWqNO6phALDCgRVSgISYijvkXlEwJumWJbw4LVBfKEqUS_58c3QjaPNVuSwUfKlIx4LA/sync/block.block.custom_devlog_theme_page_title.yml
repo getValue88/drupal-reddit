@@ -1,0 +1,20 @@
+uuid: 1c2691e6-069d-4740-84f7-59a0126eb98f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - custom_devlog_theme
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: custom_devlog_theme_page_title
+theme: custom_devlog_theme
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

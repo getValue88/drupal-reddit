@@ -1,0 +1,22 @@
+uuid: b443ae85-1c98-4b2e-aab6-7a7e2b9a1224
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - custom_devlog_theme
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: custom_devlog_theme_content
+theme: custom_devlog_theme
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

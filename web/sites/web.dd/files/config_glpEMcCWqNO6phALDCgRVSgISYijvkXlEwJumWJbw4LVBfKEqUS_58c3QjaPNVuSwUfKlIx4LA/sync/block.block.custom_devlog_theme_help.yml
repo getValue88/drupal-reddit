@@ -1,0 +1,22 @@
+uuid: 94ac858a-9b4a-4021-ac7c-09490f4f4ad0
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - custom_devlog_theme
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: custom_devlog_theme_help
+theme: custom_devlog_theme
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,28 @@
+uuid: cfd73d41-504a-4a33-a40d-134d8014a532
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.dummy.body
+    - node.type.dummy
+  module:
+    - text
+    - user
+id: node.dummy.default
+targetEntityType: node
+bundle: dummy
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

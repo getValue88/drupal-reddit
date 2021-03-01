@@ -1,0 +1,22 @@
+uuid: f6cde9e8-74a1-4599-bcf7-2bb8a57f66ef
+langcode: en
+status: true
+dependencies:
+  theme:
+    - custom_devlog_theme
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: custom_devlog_theme_local_tasks
+theme: custom_devlog_theme
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }
